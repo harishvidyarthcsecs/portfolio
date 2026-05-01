@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Cyber Shield Mascot -->
+  <!-- Shield body -->
+  <path d="M100,18 L170,50 L170,112 Q170,164 100,188 Q30,164 30,112 L30,50 Z" fill="#a8c4f8" stroke="#1a1a1a" stroke-width="4.5" stroke-linejoin="round"/>
+  <!-- Shield inner panel -->
+  <path d="M100,34 L156,60 L156,112 Q156,152 100,172 Q44,152 44,112 L44,60 Z" fill="#faf7f4" stroke="#1a1a1a" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Left eye -->
+  <ellipse cx="78" cy="102" rx="18" ry="20" fill="white" stroke="#1a1a1a" stroke-width="3.5"/>
+  <!-- Right eye -->
+  <ellipse cx="122" cy="102" rx="18" ry="20" fill="white" stroke="#1a1a1a" stroke-width="3.5"/>
+  <!-- Pupils -->
+  <circle cx="82" cy="105" r="9" fill="#1a1a1a"/>
+  <circle cx="126" cy="105" r="9" fill="#1a1a1a"/>
+  <!-- Eye shine -->
+  <circle cx="86" cy="101" r="3.5" fill="white"/>
+  <circle cx="130" cy="101" r="3.5" fill="white"/>
+  <!-- Intense hacker eyebrows -->
+  <path d="M62,84 Q78,76 96,81" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M104,81 Q122,76 138,84" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- Smile -->
+  <path d="M74,132 Q100,148 126,132" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <!-- Cheek blush -->
+  <ellipse cx="62" cy="120" rx="11" ry="7" fill="#f4825c" opacity="0.35"/>
+  <ellipse cx="138" cy="120" rx="11" ry="7" fill="#f4825c" opacity="0.35"/>
+  <!-- Lightning bolt on top of shield -->
+  <path d="M108,52 L96,72 L104,72 L92,94 L112,68 L104,68 Z" fill="#f4825c" stroke="#1a1a1a" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>

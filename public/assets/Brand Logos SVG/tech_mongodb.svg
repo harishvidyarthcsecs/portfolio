@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- LaTeX — academic sticker, cream background, formula energy -->
+  <rect x="12" y="28" width="176" height="144" rx="18" fill="#faf7f4" stroke="#1a1a1a" stroke-width="4.5"/>
+  <!-- Red ruled lines (notebook feel) -->
+  <line x1="28" y1="62" x2="172" y2="62" stroke="#f4825c" stroke-width="1.2" opacity="0.4"/>
+  <line x1="28" y1="80" x2="172" y2="80" stroke="#f4825c" stroke-width="1.2" opacity="0.4"/>
+  <line x1="28" y1="98" x2="172" y2="98" stroke="#f4825c" stroke-width="1.2" opacity="0.4"/>
+  <line x1="28" y1="116" x2="172" y2="116" stroke="#f4825c" stroke-width="1.2" opacity="0.4"/>
+  <line x1="28" y1="134" x2="172" y2="134" stroke="#f4825c" stroke-width="1.2" opacity="0.4"/>
+  <!-- LaTeX wordmark: L raised A T lowered E X -->
+  <!-- L -->
+  <text x="20" y="122" font-family="'Georgia', serif" font-size="54" font-weight="700" fill="#1a1a1a">L</text>
+  <!-- A (raised) -->
+  <text x="54" y="108" font-family="'Georgia', serif" font-size="42" font-weight="700" fill="#1a1a1a">A</text>
+  <!-- T -->
+  <text x="86" y="122" font-family="'Georgia', serif" font-size="54" font-weight="700" fill="#1a1a1a">T</text>
+  <!-- E (lowered) -->
+  <text x="118" y="136" font-family="'Georgia', serif" font-size="42" font-weight="700" fill="#1a1a1a">E</text>
+  <!-- X -->
+  <text x="148" y="122" font-family="'Georgia', serif" font-size="54" font-weight="700" fill="#1a1a1a">X</text>
+  <!-- Small sigma decoration -->
+  <text x="148" y="58" font-family="'Georgia', serif" font-size="22" fill="#a8c4f8" font-weight="700">∑</text>
+  <!-- Small integral -->
+  <text x="28" y="60" font-family="'Georgia', serif" font-size="24" fill="#dcec9d" font-weight="700">∫</text>
+</svg>

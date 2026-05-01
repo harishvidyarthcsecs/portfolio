@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- GitHub Octocat — cat face with tentacles, sticker style -->
+
+  <!-- Tentacles (drawn first, behind body) -->
+  <path d="M42,148 Q28,172 36,188 Q48,196 56,180 Q60,168 52,152" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M72,162 Q62,186 72,196 Q84,202 90,186 Q92,172 82,160" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M128,162 Q118,186 128,196 Q140,202 146,186 Q148,172 138,160" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M158,148 Q144,172 152,188 Q164,196 172,180 Q176,168 168,152" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Body blob -->
+  <ellipse cx="100" cy="138" rx="64" ry="42" fill="#1a1a1a"/>
+
+  <!-- Head -->
+  <circle cx="100" cy="90" r="62" fill="#1a1a1a"/>
+
+  <!-- Face patch -->
+  <ellipse cx="100" cy="96" rx="44" ry="40" fill="#faf7f4"/>
+
+  <!-- Cat ears -->
+  <polygon points="52,52 36,18 76,46" fill="#1a1a1a" stroke="#1a1a1a" stroke-linejoin="round"/>
+  <polygon points="148,52 164,18 124,46" fill="#1a1a1a" stroke="#1a1a1a" stroke-linejoin="round"/>
+  <!-- Inner ear -->
+  <polygon points="55,50 44,28 70,46" fill="#efbbd8"/>
+  <polygon points="145,50 156,28 130,46" fill="#efbbd8"/>
+
+  <!-- Eyes -->
+  <circle cx="82" cy="86" r="14" fill="white" stroke="#1a1a1a" stroke-width="2.5"/>
+  <circle cx="118" cy="86" r="14" fill="white" stroke="#1a1a1a" stroke-width="2.5"/>
+  <circle cx="85" cy="89" r="7" fill="#1a1a1a"/>
+  <circle cx="121" cy="89" r="7" fill="#1a1a1a"/>
+  <circle cx="88" cy="86" r="2.5" fill="white"/>
+  <circle cx="124" cy="86" r="2.5" fill="white"/>
+
+  <!-- Nose -->
+  <polygon points="100,104 96,110 104,110" fill="#f4825c"/>
+
+  <!-- Smile -->
+  <path d="M84,116 Q100,126 116,116" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Whiskers -->
+  <line x1="46" y1="108" x2="84" y2="112" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="46" y1="118" x2="84" y2="118" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="154" y1="108" x2="116" y2="112" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="154" y1="118" x2="116" y2="118" stroke="#1a1a1a" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

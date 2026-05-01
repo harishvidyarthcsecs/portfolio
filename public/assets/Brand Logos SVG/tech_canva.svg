@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Canva — chunky C mark with purple gradient feel, sticker style -->
+
+  <!-- Outer circle badge -->
+  <circle cx="100" cy="100" r="88" fill="#7C3AED" stroke="#1a1a1a" stroke-width="4.5"/>
+
+  <!-- Inner white glow ring -->
+  <circle cx="100" cy="100" r="72" fill="#A855F7" stroke="none"/>
+
+  <!-- Bold C shape cut-out (white) -->
+  <!-- Full circle white -->
+  <circle cx="100" cy="100" r="54" fill="white"/>
+  <!-- Block out right side to make the C gap -->
+  <rect x="100" y="52" width="60" height="96" fill="#A855F7"/>
+
+  <!-- C stroke - draw the C as a thick arc -->
+  <path d="M152,62 Q88,36 56,100 Q88,164 152,138"
+        stroke="white" stroke-width="22" stroke-linecap="round" fill="none"/>
+
+  <!-- Purple C outline for depth -->
+  <path d="M152,62 Q88,36 56,100 Q88,164 152,138"
+        stroke="#1a1a1a" stroke-width="6" stroke-linecap="round" fill="none"/>
+
+  <!-- White C redraw on top -->
+  <path d="M152,62 Q88,36 56,100 Q88,164 152,138"
+        stroke="white" stroke-width="16" stroke-linecap="round" fill="none"/>
+
+  <!-- Decorative star top-right -->
+  <path d="M158,44 L161,36 L164,44 L172,47 L164,50 L161,58 L158,50 L150,47 Z"
+        fill="white" opacity="0.6"/>
+
+  <!-- Small dot bottom-left -->
+  <circle cx="40" cy="156" r="7" fill="white" opacity="0.4"/>
+  <circle cx="28" cy="132" r="4" fill="white" opacity="0.3"/>
+</svg>

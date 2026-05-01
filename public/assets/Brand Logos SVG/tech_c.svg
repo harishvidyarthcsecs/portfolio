@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- C Language — bold sticker style -->
+  <!-- Outer sticker shape -->
+  <circle cx="100" cy="100" r="86" fill="#5C9BD6" stroke="#1a1a1a" stroke-width="5"/>
+  <!-- Inner white ring hint -->
+  <circle cx="100" cy="100" r="66" fill="#faf7f4" stroke="#1a1a1a" stroke-width="4"/>
+  <!-- C gap block (white out right side) -->
+  <rect x="108" y="60" width="68" height="80" fill="#faf7f4"/>
+  <!-- Bold C arc using clip trick — redraw arc -->
+  <path d="M158,68 Q94,40 58,100 Q94,160 158,132" stroke="#1a1a1a" stroke-width="18" stroke-linecap="round" fill="none"/>
+  <!-- C letter fill -->
+  <path d="M154,72 Q98,48 66,100 Q98,152 154,128" stroke="#5C9BD6" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <!-- Decorative dots -->
+  <circle cx="48" cy="68" r="6" fill="#f4825c" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="38" cy="100" r="6" fill="#dcec9d" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="48" cy="132" r="6" fill="#a8c4f8" stroke="#1a1a1a" stroke-width="2"/>
+</svg>

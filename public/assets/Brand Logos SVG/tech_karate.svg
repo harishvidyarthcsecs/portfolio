@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Linux Tux — official chunky funky penguin -->
+  <!-- Body -->
+  <ellipse cx="100" cy="126" rx="60" ry="64" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="3"/>
+  <!-- White belly blob -->
+  <path d="M70,108 Q76,84 100,80 Q124,84 130,108 Q136,138 118,160 Q110,168 100,168 Q90,168 82,160 Q64,138 70,108Z" fill="#faf7f4"/>
+  <!-- Wings -->
+  <path d="M40,112 Q16,96 20,142 Q30,162 52,146 Z" fill="#1a1a1a"/>
+  <path d="M160,112 Q184,96 180,142 Q170,162 148,146 Z" fill="#1a1a1a"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="66" rx="46" ry="44" fill="#1a1a1a"/>
+  <!-- Yellow face patch -->
+  <ellipse cx="100" cy="70" rx="30" ry="28" fill="#FFD43B" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Eyes -->
+  <circle cx="88" cy="62" r="10" fill="white" stroke="#1a1a1a" stroke-width="2.5"/>
+  <circle cx="112" cy="62" r="10" fill="white" stroke="#1a1a1a" stroke-width="2.5"/>
+  <circle cx="90" cy="64" r="5" fill="#1a1a1a"/>
+  <circle cx="114" cy="64" r="5" fill="#1a1a1a"/>
+  <circle cx="92" cy="62" r="2" fill="white"/>
+  <circle cx="116" cy="62" r="2" fill="white"/>
+  <!-- Beak -->
+  <path d="M90,80 Q100,92 110,80 Q100,74 90,80Z" fill="#f4825c" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Feet -->
+  <path d="M74,186 Q62,198 50,192 Q60,182 68,186Z" fill="#FFD43B" stroke="#1a1a1a" stroke-width="2.5"/>
+  <path d="M74,186 Q72,198 60,196 Q66,184 74,186Z" fill="#FFD43B" stroke="#1a1a1a" stroke-width="2.5"/>
+  <path d="M126,186 Q138,198 150,192 Q140,182 132,186Z" fill="#FFD43B" stroke="#1a1a1a" stroke-width="2.5"/>
+  <path d="M126,186 Q128,198 140,196 Q134,184 126,186Z" fill="#FFD43B" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Belly button dot -->
+  <circle cx="100" cy="136" r="5" fill="#1a1a1a" opacity="0.15"/>
+</svg>

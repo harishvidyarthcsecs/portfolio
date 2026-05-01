@@ -1,0 +1,449 @@
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE OVERRIDES
+   Breakpoints: 1280 | 1024 | 900 | 768 | 480
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ─── Small Desktop (≤ 1280px) ─────────────────────────────────────────── */
+@media (max-width: 1280px) {
+
+    /* Motion-cards heading */
+    .motion-card__title    { font-size: 5.8rem; letter-spacing: -4px; }
+    .motion-card__subtitle { font-size: 6.2rem; }
+
+    /* Service-cards wrapper — avoid left overflow */
+    .cards-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: auto;
+    }
+}
+
+/* ─── Tablet (≤ 1024px) ─────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+
+    /* ── Navbar ── */
+    .navbar { padding: 18px 28px; }
+    .logo-truus { font-size: 2.2rem; }
+
+    /* ── Vimeo hero title ── */
+    .home-header__title { padding: 0 28px; bottom: 56px; }
+
+    /* ── Motion cards ── */
+    .motion-card-section  { padding: 80px 32px 80px; }
+    .motion-card__title   { font-size: clamp(3.2rem, 5.5vw, 5.5rem); letter-spacing: -3px; }
+    .motion-card__subtitle{ font-size: clamp(3.5rem, 6vw, 6rem);    letter-spacing: -1.5px; }
+    .motion-card__underline-svg { margin: -32px auto 0; max-width: 540px; }
+    .motion-card__cards-area { height: 440px; }
+    .motion-card__card { width: 21vw; height: 27vw; }
+    .motion-card__blob { width: 440px; height: 380px; }
+
+    /* ── Service cards — keep them visible ── */
+    .cards-wrapper {
+        height: auto;
+        min-height: 560px;
+        overflow-x: auto;
+        overflow-y: visible;
+        padding-bottom: 40px;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: flex-start;
+    }
+
+    .card {
+        width: 260px;
+        height: 400px;
+    }
+
+    .card-green    { left: calc(50% - 560px); }
+    .card-darkblue { left: calc(50% - 330px); }
+    .card-orange   { left: calc(50% - 120px); }
+    .card-maroon   { left: calc(50% + 100px); }
+    .card-pink     { left: calc(50% + 330px); }
+
+    /* ── Horizontal words ── */
+    .horizontal-words__h2 { font-size: 8vw; }
+    .horizontal-words__relative { padding-left: 20vw; padding-right: 20vw; }
+
+    /* ── Showreel ── */
+    .showreel__title { font-size: 4rem; }
+}
+
+/* ─── Medium screens (≤ 900px) ──────────────────────────────────────────── */
+@media (max-width: 900px) {
+
+    /* ── Footer top ── */
+    .footer-top {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-column h3,
+    .footer-column address,
+    .footer-email {
+        font-size: 1.6rem;
+    }
+    .footer-whatsapp { font-size: 1.7rem; }
+    .footer-big-text { font-size: 40vw; }
+
+    /* ── Motion cards ── */
+    .motion-card__title    { font-size: clamp(2.8rem, 7vw, 4.5rem); letter-spacing: -2px; }
+    .motion-card__subtitle { font-size: clamp(3rem, 7.5vw, 5rem); }
+}
+
+/* ─── Mobile (≤ 768px) ──────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+
+    /* ── Global ── */
+    .content-section { padding: 80px 0 0; overflow: visible; }
+
+    /* ── Navbar ── */
+    .navbar { padding: 14px 16px; }
+    .logo-truus { font-size: 2rem; }
+    .logo-work-container { width: 48px; height: 44px; }
+    .logo-work-text { font-size: 1.4rem; margin-left: 52px; }
+    .nav-bar__whatsapp-svg { width: 26px; }
+
+    /* ── Vimeo hero ── */
+    .vimeo-hero {
+        height: calc(100svh - 24px);
+        border-radius: 16px;
+    }
+    .home-header__title { padding: 0 20px; bottom: 64px; }
+    .vimeo-hero__controls { left: 20px; bottom: 20px; }
+
+    /* ── Horizontal words ── */
+    /* overflow: hidden !important overrides the .content-section { overflow: visible } rule
+       that otherwise lets the GSAP-translated h2 leak outside and cause page horizontal scroll */
+    .horizontal-words-section { height: 60vh; min-height: 320px; overflow: hidden !important; }
+    .horizontal-words__relative { padding-left: 12vw; padding-right: 12vw; }
+    .horizontal-words__h2 { font-size: 15vw; }
+    .horizontal-words__bottom-text {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: auto;
+        bottom: 20px;
+        width: 90vw;
+        max-width: 90vw;
+        text-align: center;
+    }
+    .horizontal-words__bottom-text-l { font-size: 0.95rem; max-width: 100%; line-height: 1.5; }
+    .horizontal-words__sticker-cursor,
+    .horizontal-words__sticker-phone,
+    .horizontal-words__sticker-watch { display: block; }
+    .horizontal-words__arrow-svg { display: block; opacity: 0; }
+
+    /* ── Motion cards ── */
+    .motion-card-section {
+        padding: 40px 20px 20px;
+    }
+
+    .motion-card__footer-text {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 8px;
+        margin-top: 20px;
+    }
+
+    .motion-card__description {
+        font-size: 1rem;
+        line-height: 1.65;
+        letter-spacing: 0;
+    }
+
+    .motion-card__heading { max-width: 100%; margin: 0 auto 24px; }
+
+    .motion-card__title {
+        font-size: clamp(2.2rem, 9vw, 3.8rem);
+        letter-spacing: -2px;
+        line-height: 0.92;
+    }
+
+    .motion-card__subtitle {
+        font-size: clamp(2.4rem, 10vw, 4.2rem);
+        letter-spacing: -1px;
+        top: -16px;
+    }
+
+    .motion-card__sticker--top { width: 90px; height: 55px; right: -10px; top: -8px; }
+
+    .motion-card__underline-svg { margin: -18px auto 0; max-width: 90%; }
+
+    /* Cards area becomes horizontal scroll strip */
+    .motion-card__cards-area {
+        /* extra height absorbs rotation expansion + vertical stagger */
+        height: calc(80vw + 60px);
+        max-width: 100%;
+        margin: 8px 0 8px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        touch-action: pan-x;
+    }
+
+    /* Popout overlays the card on mobile (avoids overflow-x:auto clipping issue) */
+    .card-popout {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.375rem;
+        transform: none;
+    }
+    .motion-card__card--1 .card-popout,
+    .motion-card__card--2 .card-popout,
+    .motion-card__card--3 .card-popout,
+    .motion-card__card--4 .card-popout { rotate: 0deg; }
+
+    .card-popout-inner { padding: 60px 16px 16px; gap: 10px; }
+    .motion-card__cards-area::-webkit-scrollbar { display: none; }
+
+    .motion-card__cards {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        padding: 24px 20px 24px;
+        gap: 10px;
+        overflow: visible;
+    }
+
+    .motion-card__card {
+        width: 58vw;
+        height: 72vw;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+
+    /* Criss-cross: alternating tilt + vertical stagger */
+    .motion-card__card--1 { transform: rotate(-5deg) translateY(-10px); margin-right: 0; }
+    .motion-card__card--2 { transform: rotate(5deg)  translateY(14px);  margin-right: 0; left: 0; bottom: 0; }
+    .motion-card__card--3 { transform: rotate(-4deg) translateY(-8px);  margin-right: 0; left: 0; }
+    .motion-card__card--4 { transform: rotate(4deg)  translateY(12px);  margin-right: 0; left: 0; bottom: 0; }
+
+    /* Floating labels — stretch across full card scroll width so one label sits over each card */
+    .motion-card__floating-labels {
+        position: absolute;
+        display: block;
+        top: 0; left: 0;
+        width: 260vw;
+        height: 100%;
+        pointer-events: none;
+        z-index: 10;
+    }
+    .motion-card__floating-label--pink   { top: 25%; left: 12%; }
+    .motion-card__floating-label--orange { top: 62%; left: 48%; }
+    .motion-card__floating-label--red    { top: 30%; left: 80%; }
+
+    .motion-card__blob { display: block; width: 220px; height: 190px; }
+
+    .motion-card__description { font-size: 1rem; padding: 0 4px; }
+
+    /* ── Showreel ── */
+    .showreel__title    { font-size: clamp(2rem, 8vw, 3.5rem); letter-spacing: -2px; }
+    .showreel__subtitle { font-size: 0.9rem; }
+
+    /* ── Service cards ── */
+    .content-section.service-cards-wrapper { padding: 60px 0 0; }
+
+    .cards-wrapper {
+        position: relative !important;
+        height: auto !important;
+        min-height: unset;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        width: 100% !important;
+        margin: 40px auto !important;
+        padding: 0 20px 20px !important;
+        gap: 20px;
+        overflow: visible !important;
+    }
+
+    .card {
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        width: 92% !important;
+        max-width: 420px !important;
+        height: auto !important;
+        min-height: unset !important;
+        /* Collapse: clip at title height */
+        max-height: 84px;
+        overflow: hidden !important;
+        padding: 0 !important;
+        margin-bottom: 0;
+        cursor: pointer;
+        transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+                    transform 0.2s ease;
+    }
+
+    /* Expanded: tall enough for all 6–7 list items */
+    .card.accordion-open {
+        max-height: 520px;
+    }
+
+    /* Slight tilt to keep personality */
+    .card-green    { transform: rotate(1.5deg)  !important; }
+    .card-darkblue { transform: rotate(-1deg)   !important; }
+    .card-orange   { transform: rotate(1deg)    !important; }
+    .card-maroon   { transform: rotate(-1.5deg) !important; }
+    .card-pink     { transform: rotate(1deg)    !important; }
+
+    /* Accordion-open doesn't reset tilt — apply after color-class specificity */
+    .card-green.accordion-open    { transform: rotate(1.5deg)  !important; }
+    .card-darkblue.accordion-open { transform: rotate(-1deg)   !important; }
+    .card-orange.accordion-open   { transform: rotate(1deg)    !important; }
+    .card-maroon.accordion-open   { transform: rotate(-1.5deg) !important; }
+    .card-pink.accordion-open     { transform: rotate(1deg)    !important; }
+
+    /* Sticker hidden on mobile (they overflow above collapsed card) */
+    .card-sticker { display: none !important; }
+
+    /* Title row — full width tap target */
+    .card-title {
+        font-size: 1.6rem !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding: 22px 20px 22px !important;
+        margin: 0 !important;
+        line-height: 1 !important;
+    }
+
+    /* Chevron indicator */
+    .card-accordion-chevron {
+        display: inline-flex;
+        flex-shrink: 0;
+        margin-left: 10px;
+        opacity: 0.65;
+        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card.accordion-open .card-accordion-chevron {
+        transform: rotate(180deg);
+    }
+
+    /* List padding when open */
+    .card.accordion-open .card-list {
+        padding: 0 20px 24px !important;
+    }
+    .card.accordion-open .card-divider-svg {
+        margin: 0 20px !important;
+        width: calc(100% - 40px) !important;
+    }
+
+    /* ── Double marquee — handled in marquee.css directly for Safari ── */
+    .marquee-left {
+        max-width: 100%; width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        min-height: 300px;
+    }
+    .marquee-text-container { text-align: left; }
+    .marquee-left h2 { font-size: 2.4rem; letter-spacing: -1.5px; margin-bottom: 0; margin-right: 0; }
+    .marquee-blob-container { width: 200px; height: 240px; top: 45%; left: 20%; }
+    .marquee-svg-item:nth-child(1) { width: 55px;  bottom: 10%; left: 55%; }
+    .marquee-svg-item:nth-child(2) { width: 200px; bottom: -5%; left: 55%; }
+    .marquee-underline { top: 5rem; right: auto; left: 9rem; width: 65px; }
+
+    /* ── Footer ── */
+    .main-footer { padding: 6px; }
+    .footer-inner {
+        padding: 44px 18px 28px;
+        border-radius: 14px;
+        min-height: 100svh;
+    }
+    .footer-top { flex-direction: column; gap: 32px; }
+    .footer-column h3  { font-size: 1.4rem; letter-spacing: -0.5px; }
+    .footer-column address { font-size: 1.25rem; }
+    .footer-email   { font-size: 1.3rem; }
+    .footer-whatsapp { font-size: 1.1rem; margin-top: -6px; }
+    .footer-map-link { font-size: 0.9rem; }
+
+    .sticker-boom   { left: 2%;  bottom: 10%; width: 80px; }
+    .sticker-smiley { left: 28%; bottom: 5%;  width: 80px; }
+    .sticker-heart  { left: 50%; bottom: 18%; width: 75px; }
+    .footer-sticker.sticker-hands  { left: 60%; bottom: 2%;  width: 80px; }
+    .footer-sticker.sticker-100    { left: 72%; bottom: 20%; width: 72px; }
+    .footer-sticker.sticker-camera { right: 2%; bottom: 8%;  width: 76px; }
+
+    .footer-bottom { margin-top: 180px; }
+    .footer-logo__svg { width: 110%; margin-left: -5%; }
+
+    .footer-credits-wrapper { margin-right: -12px; margin-bottom: -12px; }
+    .footer-credits  { font-size: 0.72rem; }
+    .credits-box     { padding: 14px 18px; gap: 18px; }
+    .credits-label   { font-size: 0.82rem; }
+    .credits-name    { font-size: 0.92rem; }
+
+    /* ── Main title (ServiceCards heading) ── */
+    .main-title { font-size: clamp(2rem, 7vw, 3.5rem); letter-spacing: -2px; }
+    .title-underline-svg { width: 100px; bottom: -8px; }
+    .title-container { margin-bottom: 40px; }
+}
+
+/* ─── Small Mobile (≤ 480px) ────────────────────────────────────────────── */
+@media (max-width: 480px) {
+
+    /* Vimeo hero */
+    .vimeo-hero { border-radius: 12px; }
+    .home-header__title { bottom: 56px; padding: 0 16px; }
+    .vimeo-hero__title { font-size: clamp(1.8rem, 8vw, 2.6rem); letter-spacing: -1.5px; gap: 0 0.1em; }
+
+    /* Motion cards heading */
+    .motion-card__title {
+        font-size: clamp(1.8rem, 8.5vw, 3rem);
+        letter-spacing: -1.5px;
+    }
+    .motion-card__subtitle {
+        font-size: clamp(2rem, 9.5vw, 3.2rem);
+        letter-spacing: -0.5px;
+        top: -12px;
+    }
+    .motion-card__underline-svg { margin: -12px auto 0; }
+    .motion-card__card { width: 66vw; height: 86vw; }
+
+    /* Showreel */
+    .showreel__title { font-size: clamp(1.6rem, 7.5vw, 2.4rem); letter-spacing: -1.5px; }
+
+    /* Main title */
+    .main-title { font-size: clamp(1.8rem, 8vw, 2.8rem); letter-spacing: -1.5px; }
+
+    /* Horizontal words */
+    .horizontal-words-section { height: 50vh; min-height: 280px; }
+    .horizontal-words__h2 { font-size: 17vw; }
+
+    /* Footer */
+    .footer-inner { padding: 36px 14px 20px; border-radius: 12px; }
+    .footer-column h3    { font-size: 1.2rem; }
+    .footer-column address { font-size: 1.1rem; }
+    .footer-email    { font-size: 1.15rem; }
+    .footer-whatsapp { font-size: 1rem; }
+
+    /* Navbar */
+    .navbar { padding: 12px 14px; }
+    .logo-truus { font-size: 1.8rem; }
+
+    /* Service cards */
+    .card {
+        width: 95% !important;
+        max-width: 100% !important;
+        padding: 2.5rem 1.2rem 1.2rem;
+        min-height: 360px;
+    }
+    .card-title { font-size: 1.6rem; }
+    .card-list li { font-size: 1rem; }
+}
+
+/* ─── Very small (≤ 360px) ──────────────────────────────────────────────── */
+@media (max-width: 360px) {
+    .motion-card__title    { font-size: 1.7rem; }
+    .motion-card__subtitle { font-size: 1.9rem; }
+    .motion-card__card     { width: 72vw; height: 94vw; }
+    .horizontal-words__h2  { font-size: 18vw; }
+    .showreel__title       { font-size: 1.5rem; }
+    .main-title            { font-size: 1.7rem; }
+}

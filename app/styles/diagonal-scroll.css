@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* ─── Track ──────────────────────────────────────────────────────────────── */
+.ds-track {
+    position: relative;
+    width: 100%;
+}
+
+/* ─── Sticky stage ───────────────────────────────────────────────────────── */
+.ds-stage {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: #f0ebe6;
+}
+
+/* ─── Heading ────────────────────────────────────────────────────────────── */
+.ds-heading {
+    position: absolute;
+    bottom: 14vh;
+    left: 8vw;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.ds-heading-line {
+    overflow: hidden;
+    display: block;
+    line-height: 1.08;
+}
+
+.ds-heading-word {
+    display: inline-block;
+    font-family: 'Space Grotesk', 'Epilogue', sans-serif;
+    font-size: clamp(2.8rem, 7vw, 6.5rem);
+    font-weight: 700;
+    letter-spacing: -3px;
+    color: var(--color-dark, #1a1a1a);
+    transform: translateY(110%);
+    will-change: transform;
+}
+
+.ds-sublabel {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-dark, #1a1a1a);
+    opacity: 0;
+    margin: 16px 0 0;
+    letter-spacing: 0.04em;
+}
+
+/* ─── Cards stage — full screen ──────────────────────────────────────────── */
+.ds-cards-stage {
+    position: absolute;
+    inset: 0;
+}
+
+.ds-card {
+    position: absolute;
+    inset: 0;
+    background: #0a0a0a;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+    padding: clamp(28px, 5vw, 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+    will-change: transform, opacity;
+    overflow: hidden;
+}
+
+/* ─── Card background SVG layer ─────────────────────────────────────────── */
+.ds-card__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+.ds-card__bg svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* All card flex children sit above background */
+.ds-card__top,
+.ds-card__body,
+.ds-card__footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* ─── Card internals ─────────────────────────────────────────────────────── */
+.ds-card__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ds-card__num {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(0.85rem, 1.2vw, 1rem);
+    font-weight: 500;
+    opacity: 0.45;
+    color: #fff;
+    letter-spacing: 0.08em;
+}
+
+.ds-card__tag {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(0.78rem, 1vw, 0.95rem);
+    font-weight: 600;
+    padding: 6px 18px;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.06);
+    color: var(--color-dark, #1a1a1a);
+}
+
+.ds-card__tag.card-tag--orange { background: #f4825c; color: #fff; }
+.ds-card__tag.card-tag--blue   { background: #a8c4f8; color: #1a1a1a; }
+.ds-card__tag.card-tag--green  { background: #b7f0b1; color: #1a1a1a; }
+.ds-card__tag.card-tag--pink   { background: #f5b8d4; color: #1a1a1a; }
+.ds-card__tag.card-tag--dark   { background: #1a1a1a; color: #fff; }
+
+.ds-card__body {
+    max-width: min(680px, 60vw);
+}
+
+.ds-card__title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(2.2rem, 5.5vw, 5.5rem);
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 1.05;
+    color: #fff;
+    margin: 0 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ds-card__title-line {
+    display: block;
+}
+
+.ds-card__title em {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.ds-card__desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(1rem, 1.4vw, 1.25rem);
+    font-weight: 400;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.65);
+    margin: 0 0 16px;
+}
+
+.ds-card__paper-link {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(0.82rem, 1.1vw, 1rem);
+    font-weight: 600;
+    color: #a8c4f8;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    letter-spacing: 0.02em;
+    transition: color 0.2s;
+}
+.ds-card__paper-link:hover { color: #fff; }
+
+/* ─── Card footer row ────────────────────────────────────────────────────── */
+.ds-card__footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+/* ─── Tagline (left side of footer) ─────────────────────────────────────── */
+.ds-bg-label {
+    opacity: 0;
+    will-change: opacity;
+    pointer-events: none;
+}
+
+.ds-bg-label__l1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.ds-bg-label__l2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-weight: 300;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.2;
+}
+
+/* ─── Visual + stats (right side of footer) ─────────────────────────────── */
+.ds-card__visual-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.ds-card__stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3px;
+}
+
+.ds-card__stat1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(0.78rem, 1.1vw, 1rem);
+    font-weight: 700;
+    color: #fff;
+}
+
+.ds-card__stat2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: clamp(0.72rem, 1vw, 0.9rem);
+    font-weight: 400;
+    color: rgba(255,255,255,0.45);
+}
+
+/* ─── Visual elements ────────────────────────────────────────────────────── */
+.ds-visual { display: flex; }
+
+.ds-visual--dots {
+    display: grid;
+    grid-template-columns: repeat(4, 22px);
+    grid-template-rows: repeat(3, 22px);
+    gap: 7px;
+}
+.ds-dot {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    display: block;
+}
+
+.ds-visual--squares {
+    display: grid;
+    grid-template-columns: repeat(3, 26px);
+    grid-template-rows: repeat(3, 26px);
+    gap: 7px;
+}
+.ds-sq {
+    width: 26px; height: 26px;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.1);
+    display: block;
+}
+.ds-sq--on { background: #29725f; }
+.card-tag--orange ~ .ds-card__visual-wrap .ds-sq--on { background: #f4825c; }
+
+.ds-visual--podium {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    height: 88px;
+}
+.ds-podium {
+    display: block;
+    width: 26px;
+    border-radius: 5px 5px 0 0;
+    background: #b7f0b1;
+}
+.ds-podium--1 { height: 88px; opacity: 1; }
+.ds-podium--2 { height: 64px; opacity: 0.65; }
+.ds-podium--3 { height: 40px; opacity: 0.35; }
+
+.ds-visual--bars {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    width: 160px;
+}
+.ds-bar {
+    display: block;
+    height: 14px;
+    border-radius: 7px;
+    background: #f5b8d4;
+}
+
+.ds-visual--target svg {
+    color: rgba(255,255,255,0.85);
+    display: block;
+    width: 130px;
+    height: 130px;
+}
+
+/* ─── Mobile ─────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .ds-heading {
+        bottom: 12vh;
+        left: 6vw;
+    }
+
+    .ds-heading-word {
+        font-size: clamp(2rem, 8vw, 3.2rem);
+        letter-spacing: -1.5px;
+    }
+
+    .ds-card__body {
+        max-width: 100%;
+    }
+
+    .ds-card__title {
+        font-size: clamp(1.6rem, 6vw, 2.6rem);
+        letter-spacing: -1px;
+    }
+
+    .ds-bg-label__l1,
+    .ds-bg-label__l2 {
+        font-size: clamp(0.85rem, 3.5vw, 1.2rem);
+    }
+
+    .ds-card__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .ds-card__visual-wrap {
+        align-items: flex-start;
+        flex-direction: row;
+        gap: 14px;
+    }
+
+    .ds-card__stats {
+        align-items: flex-start;
+    }
+
+    .ds-visual--bars { width: 120px; }
+}
