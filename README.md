@@ -41,20 +41,9 @@ npm run dev
 
 ---
 
-## Highlights
+## Screenshots
 
-- **SCI Q1 paper** — Wiener index on biswapped networks, *Scientific Reports* (Springer Nature, IF 3.9)
-  → [doi.org/10.1038/s41598-025-29965-5](https://doi.org/10.1038/s41598-025-29965-5)
-- **WiperX** — DoD 5220.22-M multi-pass disk eraser for Windows & Linux
-  → [github.com/harishvidyarthcsecs/WiperX](https://github.com/harishvidyarthcsecs/WiperX)
-- **SIH 2025** — Smart India Hackathon national runner-up
-- **Proelium Academy** — Edtech platform with real students
-  → [proeliumacademy.in](https://www.proeliumacademy.in)
-
----
-
-## Contact
-
-WhatsApp · +91 6382551983  
-LinkedIn · [linkedin.com/in/harishvidyarth](https://linkedin.com/in/harishvidyarth)  
-GitHub · [github.com/harishvidyarthcsecs](https://github.com/harishvidyarthcsecs)
+| | |
+|---|---|
+| ![Hero](public/screenshots/01-hero.png) | ![Tagline](public/screenshots/02-tagline.png) |
+| ![Research](public/screenshots/03-research.png) | ![Skills](public/screenshots/04-skills.png) |
