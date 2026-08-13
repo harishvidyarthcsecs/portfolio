@@ -378,7 +378,7 @@ export default function Navbar() {
                     {/* CV download — popout trigger */}
                     <div className="nav-hover-trigger nav-cv-trigger">
                         <div className="nav-cv-icon" title="Download CV">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 1.5L18.5 8H14V3.5zM13 13v3.586l1.293-1.293 1.414 1.414L12 20.414l-3.707-3.707 1.414-1.414L11 16.586V13h2z"/>
                             </svg>
                         </div>

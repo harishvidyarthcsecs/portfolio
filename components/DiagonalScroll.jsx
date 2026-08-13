@@ -41,15 +41,15 @@ const CARDS = [
         visual: 'podium', stat1: 'SIH 2024', stat2: 'National · Runner-up',
     },
     {
-        num: '04', tag: 'Hands-on', tagClass: 'card-tag--pink',
+        num: '04', tag: 'Internships', tagClass: 'card-tag--pink',
         titleLines: [
-            { text: 'developer by day.', italic: false },
-            { text: 'investigator by context.', italic: true },
-            { text: 'always shipping.', italic: false },
+            { text: 'internship.', italic: false },
+            { text: 'cybercrime wing &', italic: true },
+            { text: '3dots.', italic: false },
         ],
-        desc: 'from writing backend logic to working alongside investigators — code with real-world consequence.',
-        label1: 'code that runs', label2: 'where it matters.',
-        visual: 'bars', stat1: 'Full Stack', stat2: 'Cyber Crime · 3Dots',
+        desc: 'built the FundTrail Analysis Tool for Tamil Nadu Cyber Crime Wing HQ — bank fund-flow tracing, mule-account detection, case management — after a full-stack dev internship at 3Dots.',
+        label1: 'two internships.', label2: 'one real system shipped.',
+        visual: 'bars', stat1: 'FundTrail · Flask', stat2: 'Cyber Crime Wing · 3Dots',
     },
     {
         num: '05', tag: 'Attitude', tagClass: 'card-tag--dark',
